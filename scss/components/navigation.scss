@@ -1,0 +1,58 @@
+.nav {
+  background-color: $color;
+  @include d-flex;
+  justify-content: space-between;
+  padding: 3px 1.5rem;
+
+  &__block {
+    @include d-flex;
+    align-items: center;
+  }
+
+  &--left {
+    &__brand img {
+      width: 80px;
+    }
+
+    &__item {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 1.4rem;
+      text-transform: capitalize;
+      padding: 1.4rem 1.6rem;
+    transition: all .3s;
+      &--active {
+        color: #fff;
+      }
+
+      &:hover, &:active {
+          color: #fff;
+      }
+    }
+  }
+
+  &--right {
+    &__item {
+      margin: 0px 15px;
+    }
+
+    &__input {
+      padding: 5px;
+      border-radius: 5px;
+      transition: all .3s;
+      &:hover {
+          width: 140%;
+      }
+    }
+
+    &__icon {
+      font-size: 2rem;
+    }
+
+    &__avatar img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+  }
+}
